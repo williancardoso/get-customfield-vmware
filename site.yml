@@ -1,0 +1,27 @@
+---
+
+- name: Sample Playbook
+  hosts: localhost
+  remote_user: willian
+  vars:
+    - vcsim: 127.0.0.1
+
+  pre_tasks:
+
+    - name: Install dependences
+      pip:
+        name: PyVmomi
+      become: true
+
+  tasks:
+    - name: List all vms generated using vcsim
+      vmware_vm_facts:
+        validate_certs: no
+        hostname: "{{ vcsim }}"
+        username: user
+        password: pass
+      register: vm_lists
+
+    - name: Debug
+      debug:
+        msg: "{{ vm_lists['virtual_machines'].keys() }}"

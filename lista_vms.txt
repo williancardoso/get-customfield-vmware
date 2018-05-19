@@ -1,0 +1,20 @@
+Name       :  DC0_H0_VM0
+Path       :  [LocalDS_0] DC0_H0_VM0/DC0_H0_VM0.vmx
+Guest      :  otherGuest
+State      :  poweredOn
+
+Name       :  DC0_H0_VM1
+Path       :  [LocalDS_0] DC0_H0_VM1/DC0_H0_VM1.vmx
+Guest      :  otherGuest
+State      :  poweredOn
+
+Name       :  DC0_C0_RP0_VM0
+Path       :  [LocalDS_0] DC0_C0_RP0_VM0/DC0_C0_RP0_VM0.vmx
+Guest      :  otherGuest
+State      :  poweredOn
+
+Name       :  DC0_C0_RP0_VM1
+Path       :  [LocalDS_0] DC0_C0_RP0_VM1/DC0_C0_RP0_VM1.vmx
+Guest      :  otherGuest
+State      :  poweredOn
+
